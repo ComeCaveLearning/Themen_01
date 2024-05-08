@@ -51,3 +51,10 @@ console.log("inhalt:" + test); // ausgabe
 //konstante 
 const test2 = "1";
 console.log("inhalt: " + test2);// ausgabe
+
+const prompt = require('prompt-sync')({sigint: true});
+
+// Alles muss man selber machen lassen! ...
+let firstName = prompt("Vorname?: ");
+let familyName = prompt("Name?: ");
+console.log("Hallo, " + firstName + " " + familyName +"!");
