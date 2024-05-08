@@ -2,7 +2,7 @@
   "name": "themen_01",
   "version": "1.0.0",
   "description": "## Setup Programmierumgebung",
-  "main": "Src/hello_world.js",
+  "main": "Src/02_variablen.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
