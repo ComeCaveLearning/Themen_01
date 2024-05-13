@@ -1,4 +1,4 @@
-/ Entscheidungsstrukturen | control flow
+//Entscheidungsstrukturen | control flow
 
 // Deklaration + Assignment
 const ageJohn = 30;
@@ -66,3 +66,29 @@ console.log( (isJohnOlder) ? "John is older" : "Mark is older");
 //     console.log("John ist jünger!");
 // }
 
+/***Fallunterscheidung / switch|case 1 */
+
+const firstname = "Jane";
+let Job;
+Job = "Driver"
+Job = "Diver"
+// job = "driver";  // .. fährt TAXI! / UBER
+// job = "diver"; // .. taucht im Rhein!
+// job = "artist"; // .. malt ein Bild!
+// job = "pilot"; // .. macht etwas anderes! --> default
+// job = "teacher"; // .. unterrichtet!
+// job = "instructor"; // .. unterrichtet!
+
+switch (Job) {
+    case "Driver": // testauf Gleichheit
+        console.log (firstname + ".. fährt TAXI!")
+        break;
+    case "Diver": // testauf Gleichheit
+        console.log (firstname + " .. taucht im Rhein!")
+        break;
+
+
+    default:
+        console.log (firstname + " .. macht etwas anderes.")
+        break;
+}
