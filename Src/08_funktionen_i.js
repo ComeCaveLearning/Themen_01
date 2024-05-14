@@ -1,70 +1,72 @@
-// /*/***** Funktionen 01 *****/
-// // 1. Kapselung von Codeblöcken
 
-// // Funktionsaufruf | call(er)
-// // test();
+/***** Funktionen 01 *****/
+// 1. Kapselung von Codeblöcken
 
-// // Funktionsrumpf | call(ee)
-// // Funktionsdeklaration
-// //function test() 
-// {
-//     console.log("Hallo, Esther!");  
-// }
+// Funktionsaufruf | call(er)
+// test();
 
-// /***** Funktionen 02a *****/
-// // 2a. Parametrisierung + Datenübergabe von INNEN
+// Funktionsrumpf | call(ee)
+// Funktionsdeklaration
+function test() 
+{
+    console.log("Hallo, Esther!");  
+}
 
-// // Funktionsaufruf
-// // outputNames();
+/***** Funktionen 02a *****/
+// 2a. Parametrisierung + Datenübergabe von INNEN
 
-// // Funktionsdeklaration
-// function outputNames() 
-// {
-//      // interne Variable | What happens in VEGAS ...
-//     let firstName = "Jan";
-//     console.log("Hallo, " + firstName + "!"); 
-// }
+// Funktionsaufruf
+// outputNames();
 
-// // console.log(firstName); // Fehler : scope!
+// Funktionsdeklaration
+function outputNames() 
+{
+     // interne Variable | What happens in VEGAS ...
+    let firstName = "Jan";
+    console.log("Hallo, " + firstName + "!"); 
+}
 
-// /***** Funktionen 02b *****/
-// // 2b. Parametrisierung + Datenübergabe von AUSSEN
+// console.log(firstName); // Fehler : scope!
 
-// // outputNames2("Esther"); // Argument --> Daten für Parameter
-// // outputNames2("Jan");
-// // outputNames2();
+/***** Funktionen 02b *****/
+// 2b. Parametrisierung + Datenübergabe von AUSSEN
 
-// function outputNames2(firstName) { // Parameter
-//     console.log("Hallo, " + firstName + "!"); 
-// }
+// outputNames2("Esther"); // Argument --> Daten für Parameter
+// outputNames2("Jan");
+// outputNames2();
 
-// /***** Funktionen 02c *****/
-// // 2c. Mehrere Parameter / Argumente
+function outputNames2(firstName) { // Parameter
+    console.log("Hallo, " + firstName + "!"); 
+}
 
-// // outputNames3("Maxine","Mützerich");
+/***** Funktionen 02c *****/
+// 2c. Mehrere Parameter / Argumente
 
-// // const prompt = require('prompt-sync')({sigint: true});
-// // outputNames3(prompt("Vorname? : "),prompt("Nachname?: ")); // Piping
+// outputNames3("Maxine","Mützerich");
 
-// function outputNames3(firstName, familyName) { // Parameter
-//     console.log("Hallo, " + firstName + " " + familyName + "!");
-// }
+// const prompt = require('prompt-sync')({sigint: true});
+// outputNames3(prompt("Vorname? : "),prompt("Nachname?: ")); // Piping
 
-// /***** Funktionen 03a *****/
-// // 03a. Vorbereitung -Trennen der Funktionalitäten
-// // Postulat: one function = one job (uncle Bob)
-// // SRP single responsibility principle
+function outputNames3(firstName, familyName) { // Parameter
+    console.log("Hallo, " + firstName + " " + familyName + "!");
+}
+
+/***** Funktionen 03a *****/
+// 03a. Vorbereitung -Trennen der Funktionalitäten
+// Postulat: one function = one job (uncle Bob)
+// SRP single responsibility principle
 
 // outputNamesSRP("Maxine","Mützerich");
 
-//function outputNamesSRP(firstName, familyName) { // Parameter
+function outputNamesSRP(firstName, familyName) { // Parameter
 
     // 1. Funktionalität: string composing
-   // const GAP = " ";
-  //  let outputStr = "Hallo, " + firstName + GAP + familyName + "!"
+    const GAP = " ";
+    let outputStr = "Hallo, " + firstName + GAP + familyName + "!"
 
     // 2. Funktionalität: string output
-   // console.log(outputStr); */
+    console.log(outputStr);
+}
 
 /***** Funktionen 03b *****/
 
