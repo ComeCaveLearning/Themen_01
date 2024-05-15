@@ -2,7 +2,7 @@
   "name": "themen_01",
   "version": "1.0.0",
   "description": "## Setup Programmierumgebung",
-  "main": "Src/08_funktionen_i.js",
+  "main": "Src/11_Array.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
